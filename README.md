@@ -23,6 +23,7 @@ urls:
 
 
 GET
+
 get all customers -> localhost:port_no/api/customers
 
 get a specific customer -> localhost:port_no/api/customers/1
