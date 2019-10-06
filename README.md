@@ -1,41 +1,13 @@
-get into the project folder in cmd prompt
+* cd project_folder
 
+* bundle install
 
-run ' bundle install '
+* rake db:seed
 
+* rails s
 
-run ' rails s ' 
+@Test: localhost:3000/api/customers?name=aaa
 
+Refer db/seeds.rb for the db dummy data
 
-model class used: Customer{
-	name: 'aaa',
-	age: '10',
-	address: '123,North St.',
-	pincode: '123321'
-}
-
-
-to seed the sqlite3 db, run ' rake db:seed ' 
-
-
-
-urls:
-
-
-GET
-
-get all customers -> localhost:port_no/api/customers
-
-get a specific customer -> localhost:port_no/api/customers/1
-
-
-POST - to add a customer
-localhost:port_no/api/customers
-
-
-PUT - for updating a customer detail(s)
-localhost:port_no/api/customers/2
-
-
-DELETE - for deleting a customer
-localhost:port_no/api/customers/3
+db-sqlite3
